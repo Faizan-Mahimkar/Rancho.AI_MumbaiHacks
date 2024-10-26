@@ -1,0 +1,154 @@
+/* Default Style */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#menu-icon {
+    display: none;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("assets/Inter.ttf") format("truetype");
+    font-weight: bold;
+}
+
+body {
+    font-family: "Inter";
+    font-weight: bold;
+}
+
+#title {
+    color: #abd699;
+}
+
+.allparts {
+    margin-bottom: 200px;
+}
+
+.contents {
+    width: 70%;
+    margin: 5% 10% 0 20%;
+    text-align: justify;
+}
+
+.photo img {
+    width: 100%;
+}
+
+.underheader {
+    display: flex;
+}
+
+.pageheader {
+    color: rgb(24, 216, 223);
+    text-align: center;
+    margin-top: 25px;
+    font-size: 40px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images img {
+    width: 20%;
+    padding: 10px;
+}
+
+.texts {
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.intro {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+
+.instruction {
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+.collapsible {
+    background-color: rgb(116, 206, 206);
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin: 5px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-color: rgb(116, 206, 206);
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+.collapsible:hover {
+    background-color: rgb(21, 219, 219);
+    box-shadow: 1px 1px;
+}
+
+.section {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.section p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.teamImages img {
+    width: 600px;
+    height: auto;
+    margin-left: 20%;
+}
+
+
+/* For mobile devices */
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) and (orientation: portrait) {
+    #logo {
+        position: fixed;
+        left: 35%;
+        width: 25%;
+        height: 90%;
+        border-radius: 30px;
+    }
+    .contents {
+        width: 90%;
+        margin-left: 8%;
+        margin-top: 20%;
+    }
+    .intro {
+        font-size: 35px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        font-weight: bold;
+    }
+    .instruction {
+        font-weight: lighter;
+        font-size: 40px;
+    }
+    .section img {
+        width: 50%;
+        padding: 10px;
+    }
+    .section h2 {
+        font-size: 50px;
+    }
+    .section p {
+        font-size: 30px;
+    }
+    .teamImages img {
+        width: 800px;
+        height: auto;
+        margin-left: 0%;
+    }
+}

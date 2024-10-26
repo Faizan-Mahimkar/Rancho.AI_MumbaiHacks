@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block stylesheet %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block content %}
+            
+        {% include "includes/menu.html" %}
+
+        <div id="conversation-window" class="">
+            <div id="messages-box" class="messages-box"></div>
+            <div class="chat-action">
+                <input>
+                <button type="button">GO</button>
+            </div>
+        </div>
+{% endblock %}
+
+{% block script %}
+        <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+{% endblock %}
